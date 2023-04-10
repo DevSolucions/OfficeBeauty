@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Padauk&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body,
+html {
+    background-color:#000000;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .tree-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tree-container .avatar .image {
+    width: 338px;
+    margin-bottom: 40px;
+}
+
+.imgcenter {
+    width: 120px;
+    padding: 15px 0;
+}
+
+.tree-container .links-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px 0;
+}
+
+.links-container .linkagendamento {
+    width: 290px;
+    height: 40px;
+    border: 2px solid rgba(196, 3, 3);
+    background-color:rgba(196, 3, 3, 0.2);
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 2px 0;
+    margin-bottom: 18px;
+}
+
+.lojas-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    
+}
+.linkloja img{
+    width: 90px;
+}
+
+h6 {
+    font-family: 'Padauk', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.tree-container .socials-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+.socials-container .social {
+    transform: scale(0.9);
+    transition: ease 0.2s;
+}
+
+.socials-container .social:hover {
+    transform: scale(1);
+}
+
+.socials-container .social img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+}
