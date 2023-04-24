@@ -28,7 +28,7 @@ html {
 
 .tree-container .avatar .image {
     width: 338px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .imgcenter {
@@ -45,8 +45,8 @@ html {
 .links-container .linkagendamento {
     width: 290px;
     height: 40px;
-    border: 2px solid rgba(196, 3, 3);
-    background-color:rgba(196, 3, 3, 0.2);
+    border: 2px solid #c40303;
+    background-color:#c4030333;
     color: #ffffff;
     border-radius: 15px;
     font-size: 24px;
@@ -56,6 +56,32 @@ html {
     margin-bottom: 18px;
 }
 
+.button {
+    width: 250px;
+    background-color: #c40303;
+    -webkit-border-radius: 5px;
+    border-radius: 10px;
+    color: #000000;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 1px 10PX;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  @-webkit-keyframes glowing {
+    0% { background-color: #c40303; -webkit-box-shadow: 0 0 3px #c40303; }
+    50% { background-color: #c4030333; -webkit-box-shadow: 0 0 3px #c4030333; }
+    100% { background-color: #c40303; -webkit-box-shadow: 0 0 3px #c40303; }
+  }
+  
+  .button {
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+  }
+
 .lojas-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -63,7 +89,7 @@ html {
     
 }
 .linkloja img{
-    width: 100px;
+    width: 90px;
 }
 
 h6 {
